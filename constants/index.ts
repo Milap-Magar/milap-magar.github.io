@@ -111,31 +111,35 @@ export const marquee2 = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
   },
 ];
+import pinterest from "/assets/Icons/pinterest.svg";
+import instagram from "/assets/Icons/insta.svg";
+import linkedin from "/assets/Icons/linkedin.svg";
+import github from "/assets/Icons/github.svg";
 
 export const socials = [
   {
     id: 1,
     title: "Pinterest",
     link: "https://www.pinterest.com/milapeeey/",
-    icons: "/assets/Icons/pinterest.svg",
+    icons: pinterest,
   },
   {
     id: 2,
     title: "Instagram",
     link: "https://www.instagram.com/milaapeeey/",
-    icons: "/assets/Icons/insta.svg",
+    icons: instagram,
   },
   {
     id: 3,
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/milap-magar-21427a229/",
-    icons: "/assets/Icons/linkedin.svg",
+    icons: linkedin,
   },
   {
     id: 4,
     title: "Github",
     link: "https://github.com/Milap-Magar",
-    icons: "/assets/Icons/github.svg",
+    icons: github,
   },
 ];
 
@@ -159,13 +163,18 @@ export const MainHeading = [
 ];
 
 // Exporting the project section
+import vault from "/assets/Images/vault.png";
+import cms from "/assets/Images/cms.png";
+import noteapp from "/assets/Images/noteapp.png";
+import ecom from "/assets/Images/ss1.png";
+
 export const projects = [
   {
     id: 1,
     titleName: "Vault",
     description:
       "The Vault app that you created is a secure and intuitive web application designed to help users store and manage their sensitive information. Whether it's passwords, notes, or other personal data, the app provides a safe and efficient way to keep everything in one place. With the use of Next.js, Tailwind CSS, and Appwrite, the Vault app ensures seamless performance, responsive design, and enhanced security.",
-    img: "/assets/Images/vault.png",
+    img: vault,
     link: "https://student-cms.netlify.app/",
     githubLink: "https://github.com/Milap-Magar/Vault.git",
   },
@@ -175,7 +184,7 @@ export const projects = [
     description:
       "Complain Management System which was bascially designed and builted for schools and colleges. The Complaint Management System (CMS) you created is a comprehensive platform designed to capture, track, and resolve complaints or feedback from students and teachers in educational institutions. The app streamlines the process of managing grievances, fostering better communication between students, teachers, and administrators, and ultimately improving the overall environment within the school or college.",
     bgColor: "bg-trasparent dark:bg-black",
-    img: "/assets/Images/cms.png",
+    img: cms,
     link: "https://student-cms.netlify.app/",
     githubLink: "https://github.com/Milap-Magar/CMS-.git",
   },
@@ -185,7 +194,7 @@ export const projects = [
     description:
       "The Note Management System you created is an efficient and user-friendly platform designed to help students and educators manage, organize, and share notes seamlessly. This system streamlines the process of storing and retrieving study materials, making it easier for users to stay organized and have access to the information they need anytime, anywhere.",
     bgColor: "bg-trasparent dark:bg-black",
-    img: "/assets/Images/noteapp.png",
+    img: noteapp,
     link: "",
     githubLink: "https://github.com/Milap-Magar/Note-Management.git",
   },
@@ -194,7 +203,7 @@ export const projects = [
     titleName: "Ecommerce Store Admin && Store",
     description:
       "The E-commerce Page is designed to serve as a comprehensive online shopping hub for a variety of products, ranging from fashion to electronics. With a modern and intuitive layout, this platform allows users to browse through categories, view detailed product descriptions, check out customer reviews, and make purchases with ease. Integrated with secure payment options and a streamlined checkout process, it offers a hassle-free shopping experience. The page also features promotions, sales, and recommendations based on user preferences, ensuring that customers always find what they need.",
-    img: "/assets/Images/ss1.png",
+    img: ecom,
     link: "",
     githubLink: "",
   },

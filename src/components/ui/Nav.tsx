@@ -3,6 +3,11 @@ import { navItems } from "../../../constants";
 import Soicals from "./Soicals";
 import { Link } from "react-router-dom";
 
+import blub_dark from "/assets/Icons/bulb.svg";
+import blub from "/assets/Icons/bulb-dark.svg";
+import arrow from "/assets/Icons/arrow.svg";
+import logo from "/assets/Icons/Logo-dark.svg";
+  
 interface NavItems {
   id: string;
   title: string;
@@ -54,11 +59,7 @@ const Nav = () => {
       <div className="flex items-center">
         <button onClick={toggleTheme} className="cursor-pointer border-none">
           <img
-            src={
-              isDarkMode
-                ? "/assets/Icons/bulb-dark.svg"
-                : "/assets/Icons/bulb.svg"
-            }
+            src={isDarkMode ? blub : blub_dark}
             alt="bulb-icon"
             width={25}
             height={25}
@@ -79,7 +80,7 @@ const Nav = () => {
                   {selectedItem?.title}
                 </span>
                 <img
-                  src="/assets/Icons/arrow.svg"
+                  src={arrow}
                   width={20}
                   height={20}
                   alt="drop-icon"
@@ -114,7 +115,7 @@ const Nav = () => {
       {/* Logo Section */}
       <figure className="relative block">
         <img
-          src="/assets/Icons/Logo-dark.svg"
+          src={logo}
           alt="logo-icon"
           width={45}
           height={45}
