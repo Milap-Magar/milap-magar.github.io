@@ -11,7 +11,8 @@ const Main = () => {
       </div>
       <div className="space-y-4 animate-slideUp flex flex-col items-center justify-center text-center h-full">
         <h1 className="text-5xl sm:text-6xl font-extrabold dark:text-green-100 text-green-300 ">
-          <span>Hieee</span>,<br />
+          <span className="text-xl sm:text-lg">Hieee, </span>
+          <br />
           This is Milap Magar
         </h1>
         <h2 className="text-2xl sm:text-3xl font-semibold text-green-500">
