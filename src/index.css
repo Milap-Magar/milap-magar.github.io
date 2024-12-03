@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background-light: #daf1de;
+  --color-background-dark: #051f20;
+  --color-foreground-light: #051f20;
+  --color-foreground-dark: #daf1de;
+  --font-tmr: "Tomorrow", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.hide-scrollbar {
+  overflow: scroll;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  color: var(--color-foreground-light);
+  background: var(--color-background-light);
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.dark body {
+  color: var(--color-foreground-dark);
+  background: var(--color-background-dark);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+.animate-marquee2 {
+  display: flex;
+  animation: marquee 20s linear infinite reverse;
+  will-change: transform;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply min-h-screen;
+  }
+}
+
+@layer utilities {
+  /* Heading - Typography */
+  .h1 {
+    @apply text-green-300 dark:text-[#00FF00] text-[20px] sm:text-[24px] md:text-[34px] leading-[23px] tracking-[14px] font-tomorrow font-semibold;
+  }
+  .h2 {
+    @apply text-[24px] leading-[36px] tracking-widest font-bold;
+  }
+  .h3 {
+    @apply text-[20px] leading-[28px] font-semibold;
+  }
+  .h4 {
+    @apply text-[18px] leading-[20px] font-medium;
+  }
+  .h5 {
+    @apply text-[16px] leading-[24px] font-semibold;
+  }
+  /* button */
+  .button {
+    @apply text-[14px] leading-[20px] font-medium;
+  }
+}
+
+@layer nav {
+  .nav-container {
+    @apply flex justify-between items-start h-[200px] gap-4 cursor-pointer relative transition-all overflow-hidden;
+  }
+  .nav-section {
+    @apply w-auto h-[20px] z-10 flex items-center justify-between;
+  }
+  .nav-section-item {
+    @apply flex flex-col p-5 relative -top-24 opacity-0 transition-[300ms];
+  }
+  .arrow {
+    @apply relative -right-2 w-[25px] h-[10px] rotate-90 z-10 transition-[300ms];
+  }
+}
+
+/* isLoading CSS */
+/* From Uiverse.io by jeremyssocial */
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+  45%,
+  55% {
+    width: 6.2em;
+  } /* adjust width based on content */
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+.terminal-loader {
+  border: 0.1em solid #333;
+  background-color: #1a1a1a;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  padding: 1.5em 1em;
+  width: 12em;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.terminal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background-color: #333;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0 0.4em;
+  box-sizing: border-box;
+}
+
+.terminal-controls {
+  float: right;
+}
+
+.control {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.4em;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+.control.close {
+  background-color: #e33;
+}
+
+.control.minimize {
+  background-color: #ee0;
+}
+
+.control.maximize {
+  background-color: #0b0;
+}
+
+.terminal-title {
+  float: left;
+  line-height: 1.5em;
+  color: #eee;
+}
+
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid green; /* Cursor */
+  animation: typeAndDelete 4s steps(11) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+  margin-top: 1.5em;
+}
