@@ -1,0 +1,4 @@
+1) Navigation left
+2) Logo For the favicon.ico
+3) EmailJS integration
+4) Footer section fixes 

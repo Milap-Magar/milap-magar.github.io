@@ -1,4 +1,4 @@
-import { About, Contact, Main, Work } from "../src/pages"; // Adjust path if necessary
+import { About, Contact, Main, Work } from "../src/pages";
 import Layout from "./Layout";
 
 export default function Home() {
