@@ -2,7 +2,7 @@ import Marquee from "../components/ui/Marquee";
 import { ContactsFilled } from "@ant-design/icons";
 import ContactForm from "../components/ui/ContactForm";
 import ContactFiller from "../components/ui/ContactFiller";
-import { marquee1, marquee2 } from "../../constants";
+import { marquee1, marquee2 } from "../../constants"; 
 
 const Contact = () => {
   return (
