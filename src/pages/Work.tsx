@@ -47,7 +47,7 @@ const Work = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="absolute bottom-0 z-10 text-white py-4 px-16 bg-green-300 bg-opacity-70 rounded-md">
+          <div className="absolute bottom-0 z-10 text-white py-4 px-48 bg-green-300 bg-opacity-70 rounded-md">
             <TitleUI
               titleName={projects[currentIndex].titleName}
               id={projects[currentIndex].id}
