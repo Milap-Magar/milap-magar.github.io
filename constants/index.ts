@@ -185,7 +185,7 @@ export const projects = [
     description:
       "The Vault app that you created is a secure and intuitive web application designed to help users store and manage their sensitive information. Whether it's passwords, notes, or other personal data, the app provides a safe and efficient way to keep everything in one place. With the use of Next.js, Tailwind CSS, and Appwrite, the Vault app ensures seamless performance, responsive design, and enhanced security.",
     img: vault,
-    link: "https://student-cms.netlify.app/",
+    link: "https://my-vault-inc.vercel.app/",
     githubLink: "https://github.com/Milap-Magar/Vault.git",
   },
   {
