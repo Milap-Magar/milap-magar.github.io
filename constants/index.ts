@@ -172,6 +172,15 @@ import ecom from "/assets/Images/ss1.png";
 export const projects = [
   {
     id: 1,
+    titleName: "My Vault App",
+    description:
+      "The Vault app that you created is a secure and intuitive web application designed to help users store and manage their sensitive information. Whether it's passwords, notes, or other personal data, the app provides a safe and efficient way to keep everything in one place. With the use of Next.js, Tailwind CSS, and Appwrite, the Vault app ensures seamless performance, responsive design, and enhanced security.",
+    img: vault,
+    link: "https://my-vault-inc.vercel.app/",
+    githubLink: "https://github.com/Milap-Magar/Vault.git",
+  },
+  {
+    id: 2,
     titleName: "Valorant Identifier",
     description:
       "This is valorants core website which defines all the data and heros information.",
@@ -179,15 +188,7 @@ export const projects = [
     link: "https://valorant-beta.vercel.app/",
     githubLink: "https://github.com/Milap-Magar/Valorant.git",
   },
-  {
-    id: 2,
-    titleName: "Vault",
-    description:
-      "The Vault app that you created is a secure and intuitive web application designed to help users store and manage their sensitive information. Whether it's passwords, notes, or other personal data, the app provides a safe and efficient way to keep everything in one place. With the use of Next.js, Tailwind CSS, and Appwrite, the Vault app ensures seamless performance, responsive design, and enhanced security.",
-    img: vault,
-    link: "https://my-vault-inc.vercel.app/",
-    githubLink: "https://github.com/Milap-Magar/Vault.git",
-  },
+
   {
     id: 3,
     titleName: "Complain Management System",
@@ -232,7 +233,7 @@ export const projects = [
     description:
       "Nike Store is an e-commerce platform dedicated to providing customers with a seamless shopping experience for all Nike products. From shoes, apparel, and accessories to the latest in sportswear technology, Nike Store offers a wide range of products to meet the needs of athletes, fitness enthusiasts, and sneakerheads. With easy navigation, user-friendly checkout, and secure payment methods, the platform ensures that customers can find and purchase their favorite Nike products effortlessly",
     img: "/assets/Images/ss.png",
-    link: "",
+    link: "https://nikestore12.netlify.app/",
     githubLink: "",
   },
   {
@@ -241,7 +242,7 @@ export const projects = [
     description:
       "The Travel Page is a dynamic platform designed to inspire and assist users in planning their next getaway. Whether it's an adventure-filled vacation or a relaxing retreat, this page offers a curated selection of destinations, accommodations, and travel packages to help users create the perfect trip. With detailed information about top tourist spots, tips for traveling, and real-time booking features, the page serves as a one-stop-shop for all travel needs. Users can explore destinations by category, read recommendations, and easily book flights, hotels, or tours.",
     img: "/assets/Images/ss1.png",
-    link: "",
+    link: "https://tours-travel12.netlify.app/",
     githubLink: "",
   },
 ];
